@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Group
 metadata:
-  name: digital-services
+  name: nationalarchives/digital-services
   description: Digital Services
 spec:
   type: team
