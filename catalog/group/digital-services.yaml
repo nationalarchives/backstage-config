@@ -1,0 +1,38 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: digital-services
+  description: Digital Services
+spec:
+  type: team
+  profile:
+    # Intentional no displayName for testing
+    # email: team-a@example.com
+    picture: https://api.dicebear.com/7.x/identicon/svg?seed=Fluffy&backgroundType=solid,gradientLinear&backgroundColor=ffd5dc,b6e3f4
+  parent: backstage
+  children: []
+---
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: digital-services-services
+  description: All Digital Services Backstage catalog entities
+spec:
+  type: url
+  targets:
+    - ../systems/nationalarchives-website.yaml
+    - ../components/ds-wagtail.yaml
+    - ../components/ds-frontend.yaml
+    - ../apis/wagtail-api.yaml
+    - ../resources/wagtail-db.yaml
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: andrew-hosgood
+spec:
+  profile:
+    # Intentional no displayName for testing
+    email: andrew.hosgood@nationalarchives.gov.uk
+    picture: https://api.dicebear.com/7.x/avataaars/svg?seed=Luna&backgroundColor=transparent
+  memberOf: [group:default/digital-services]

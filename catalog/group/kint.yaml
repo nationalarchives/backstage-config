@@ -1,0 +1,24 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: kint
+  description: Knowledge Integration
+spec:
+  type: team
+  profile:
+    # Intentional no displayName for testing
+    # email: team-a@example.com
+    picture: https://api.dicebear.com/7.x/identicon/svg?seed=Fluffy&backgroundType=solid,gradientLinear&backgroundColor=ffd5dc,b6e3f4
+  parent: digital-services
+  children: []
+---
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: kint-services
+  description: All KINT Backstage catalog entities
+spec:
+  type: url
+  targets:
+    - ../systems/ciim.yaml
+    - ../apis/rosetta-api.yaml

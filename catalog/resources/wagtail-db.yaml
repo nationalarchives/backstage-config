@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: wagtail-db
+  description: Wagtail Postgres database
+spec:
+  type: database
+  owner: group:default/digital-services
+  system: nationalarchives-website
+  dependencyOf:
+    - component:default/ds-wagtail

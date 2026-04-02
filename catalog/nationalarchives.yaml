@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: nationalarchives
+  description: The National Archives
+  links:
+    - url: https://www.nationalarchives.gov.uk/
+      title: Website
+spec:
+  type: url
+  targets:
+    - ./group/digital-services.yaml
+    - ./group/kint.yaml

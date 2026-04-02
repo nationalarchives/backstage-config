@@ -1,0 +1,27 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: rosetta-api
+  title: Rosetta API
+  description: >
+    Records from CIIM
+  tags:
+    - rest
+spec:
+  type: openapi
+  lifecycle: production
+  owner: group:kint
+  system: ciim
+  definition: |
+    openapi: "3.0.3"
+    info:
+      title: Rosetta API
+      description: >
+        The Rosetta REST API (v2) served by the CIIM system. Provides access
+        to records managed in the CIIM system.
+      version: "2"
+    servers:
+      - url: /api/v2
+        description: Rosetta API v2
+    paths: {}
+  
