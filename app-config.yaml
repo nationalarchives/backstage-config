@@ -1,5 +1,3 @@
-apiVersion: backstage.io/v1alpha1
-
 app:
   title: The National Archives Backstage
   baseUrl: https://backstage.tna.dblclk.dev

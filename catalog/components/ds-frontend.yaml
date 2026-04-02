@@ -22,4 +22,4 @@ spec:
   consumesApis:
     - wagtail-api
   dependsOn:
-    - service:ds-wagtail
+    - component:ds-wagtail
