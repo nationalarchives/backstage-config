@@ -35,4 +35,4 @@ spec:
     # Intentional no displayName for testing
     email: andrew.hosgood@nationalarchives.gov.uk
     picture: https://api.dicebear.com/7.x/avataaars/svg?seed=Luna&backgroundColor=transparent
-  memberOf: [group:default/digital-services]
+  memberOf: [group:digital-services]

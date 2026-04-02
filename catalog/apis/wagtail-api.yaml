@@ -16,7 +16,7 @@ metadata:
 spec:
   type: openapi
   lifecycle: production
-  owner: group:default/digital-services
+  owner: group:digital-services
   system: nationalarchives-website
   definition: |
     openapi: "3.0.3"

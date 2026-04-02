@@ -5,7 +5,7 @@ metadata:
   description: Wagtail Postgres database
 spec:
   type: database
-  owner: group:default/digital-services
+  owner: group:digital-services
   system: nationalarchives-website
   dependencyOf:
     - component:default/ds-wagtail

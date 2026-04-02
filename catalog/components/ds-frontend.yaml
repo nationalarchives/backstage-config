@@ -17,7 +17,7 @@ metadata:
 spec:
   type: website
   lifecycle: production
-  owner: group:default/digital-services
+  owner: group:digital-services
   system: nationalarchives-website
   consumesApis:
     - wagtail-api

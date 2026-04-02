@@ -10,4 +10,4 @@ metadata:
     - website
     - cms
 spec:
-  owner: group:default/digital-services
+  owner: group:digital-services
